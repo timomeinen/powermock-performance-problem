@@ -1,0 +1,46 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.software-pilot</groupId>
+    <artifactId>mockito-1.6</artifactId>
+    <version>1</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>1</id>
+            <properties>
+                <powermock.version>1.7.4</powermock.version>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>org.powermock</groupId>
+                    <artifactId>powermock-api-mockito</artifactId>
+                    <version>${powermock.version}</version>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>2</id>
+            <properties>
+                <powermock.version>2.0.0-RC.4</powermock.version>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>org.powermock</groupId>
+                    <artifactId>powermock-api-mockito2</artifactId>
+                    <version>${powermock.version}</version>
+                    <scope>test</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+
+</project>
